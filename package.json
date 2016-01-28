@@ -1,0 +1,19 @@
+{
+  "name": "exercise-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alec Taylor",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ataylor79/exerciseUI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ataylor79/exerciseUI/issues"
+  },
+  "homepage": "https://github.com/ataylor79/exerciseUI#readme",
+  "description": ""
+}
