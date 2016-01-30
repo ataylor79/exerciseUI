@@ -1,6 +1,6 @@
-routing.$inject = ['$urlRouterProvider', '$locationProvider', '$stateProvider'];
+routing.$inject = ['$urlRouterProvider', '$locationProvider', '$stateProvider', '$mdThemingProvider'];
 
-export default function routing($urlRouterProvider, $locationProvider, $stateProvider) {
+export default function routing($urlRouterProvider, $locationProvider, $stateProvider, $mdThemingProvider) {
   $locationProvider.html5Mode(true);
   $urlRouterProvider.otherwise('/');
 
@@ -13,4 +13,7 @@ export default function routing($urlRouterProvider, $locationProvider, $statePro
       url: '/profile',
       template: require('./pages/user.html')
     });
-}
+
+  $mdThemingProvider.theme('default')
+    .primaryPalette('light-green');
+}  

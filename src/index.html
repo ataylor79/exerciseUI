@@ -5,22 +5,32 @@
 	<title>Exercise App</title>
 </head>
 <body ng-app="ExerciseApp">
-	<header><h1>Exercise UI</h1></header>
-	<main layout="row">
-		<aside flex>
+	<header>
+		<md-toolbar layout-padding="10">
+    Exercise App
+  </md-toolbar>
+	</header>
+	<div layout="column" layout-fill>
+		<section layout="row" flex>
+		<md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="true">
+			<md-content layout-padding>
 			<nav>
-				<ul>
 					<li><a href="/progress">Progress</a></li>
 					<li><a href="/exercises">Exercises</a></li>
 					<li><a href="/profile">Profile details</a></li>
 					<li><a href="/users">User list</a></li>
-				</ul>
 			</nav>
-		</aside>
-		<section flex>
+			</md-content>
+		</md-sidenav>
+		<div flex>
 			<div ui-view></div>
+		</div>
 		</section>
-	</main>
-	<footer>footer</footer>
+	</div>
+	<footer>
+		<div layout="row" layout-align="center center">
+        <h2>My Awesome Footer</h2>
+    </div>
+  </footer>
 </body>
 </html>
