@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<base href="/">
 	<title>Exercise App</title>
-	<link rel="stylesheet" href="css/vendor/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body ng-app="ExerciseApp">
 	<header><h1>Exercise UI</h1></header>
-	<main ng-controller="UserController">
-		<aside>
-			<nav>
-				<ul>
-					<li ng-repeat="user in users">
-						{{user.firstName}} {{user.lastName}}
-					</li>
-				</ul>
-			</nav>
+	<main>
+		<aside ng-controller="UserController">
+			<nav ui-view></nav ui-view>
 		</aside>
-		<section>main section</section>
+		<section>main section yes</section>
 	</main>
 	<footer>footer</footer>
-	<script src="js/vendor/jQuery.min.js"></script>
-	<script src="js/vendor/angular.min.js"></script>
-	<script src="js/vendor/lodash.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/users/user.controller.js"></script>
 </body>
 </html>

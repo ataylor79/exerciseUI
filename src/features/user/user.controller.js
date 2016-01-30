@@ -1,9 +1,6 @@
-(function () {
+// user controller
 
-	var app = angular.module("ExerciseApp");
-
-	var UserController = function ($scope) {
-
+export default function ($scope) {
 		$scope.users = [
 			{
 				firstName: "Bill",
@@ -22,8 +19,4 @@
 				lastName : "Cope"
 			}
 		];
-	};
-
-	app.controller("UserController", UserController);
-
-})();
+}
