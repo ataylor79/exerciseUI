@@ -6,11 +6,20 @@
 </head>
 <body ng-app="ExerciseApp">
 	<header><h1>Exercise UI</h1></header>
-	<main>
-		<aside ng-controller="UserController">
-			<nav ui-view></nav ui-view>
+	<main layout="row">
+		<aside flex>
+			<nav>
+				<ul>
+					<li><a href="/progress">Progress</a></li>
+					<li><a href="/exercises">Exercises</a></li>
+					<li><a href="/profile">Profile details</a></li>
+					<li><a href="/users">User list</a></li>
+				</ul>
+			</nav>
 		</aside>
-		<section>main section yes</section>
+		<section flex>
+			<div ui-view></div>
+		</section>
 	</main>
 	<footer>footer</footer>
 </body>
